@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+
+function handleClick(){
+  console.log(" testing is clicked")
+  const h1= document.querySelector(".test-heading")
+  h1.classList.toggle("hidden")
+  
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div> 
+      
+      <h2 > visit <a href="https://www.google.com/"> google</a></h2>
+      <h2 > visit <span onClick={handleClick} > testing</span></h2>
     </div>
+    
   );
 }
 
